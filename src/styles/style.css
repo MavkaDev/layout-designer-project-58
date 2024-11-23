@@ -1,13 +1,13 @@
 /** CSS STYLE **/
 :root {
-  --color-white: rgba(255, 255, 255, 1);
-  --color-light: rgba(245, 244, 240, 1);
-  --color-dark-50: rgba(144, 141, 139, 1);
-  --color-dark: rgba(42, 38, 38, 1);
-  --color-primary: rgba(254, 138, 2, 1);
-  --color-primary-dark: rgba(66, 65, 60, 1);
-  --color-brown: rgba(176, 154, 129, 1);
-  --color-white-50: rgba(215, 204, 192, 1);
+  --color-white: rgb(255 255 255 / 100%);
+  --color-light: rgb(245 244 240 / 100%);
+  --color-dark-50: rgb(144 141 139 / 100%);
+  --color-dark: rgb(42 38 38 / 100%);
+  --color-primary: rgb(254 138 2 / 100%);
+  --color-primary-dark: rgb(66 65 60 / 100%);
+  --color-brown: rgb(176 154 129 / 100%);
+  --color-white-50: rgb(215 204 192 / 100%);
 }
 
 body,
@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   line-height: 1.6em;
   color: #2a2626;
 }
@@ -24,7 +24,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Neucha";
+  font-family: Neucha, sans-serif;
   line-height: 1.2em;
   font-style: normal;
   font-weight: 400;
@@ -49,8 +49,6 @@ h3 {
   margin: 0 auto;
 }
 
-/*  */
-
 .brand-background {
   position: relative;
 }
@@ -62,20 +60,13 @@ h3 {
   background-image: url("/img/background.png");
   background-color: var(--color-white-50);
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  inset: 0;
   opacity: 0.1;
 }
-
-/*  */
 
 .text-primary {
   color: var(--color-primary);
 }
-
-/*  */
 
 header img {
   position: absolute;
@@ -88,9 +79,4 @@ header img {
 header h1 {
   position: relative;
   z-index: 20;
-}
-
-/* magic */
-header h1 {
-  margin-top: 7px;
 }
